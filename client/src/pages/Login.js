@@ -20,11 +20,11 @@ export const Login = () => {
   return (
     <div className="fondo imgDeFondo">
         
-        <nav className="d-flex justify-content-start align-items-center pt-2 px-5">
+        <nav className="d-flex justify-content-center justify-content-md-start align-items-center pt-2 px-5">
               <a href="/" className="text-sun text-decoration-none display-4 fw-bold">Sunflix</a>
         </nav>
 
-        <main className="vh-100 d-flex justify-content-center align-items-center">
+        <main className="vh-100 d-flex justify-content-center align-items-center px-3">
             <Formik initialValues={dataform}
                   validationSchema={Yup.object({
                     email: Yup.string().email().trim().lowercase().required("Email requerido"),
@@ -46,7 +46,7 @@ export const Login = () => {
               >
             {({handleSubmit, isSubmitting}) => (
               <Form onSubmit={handleSubmit} className='form-control-sm p-5 rounded formularioLogin flex-column d-flex'>
-                  <h3 className="text-sun text-center mb-3 fw-bold">Iniciar sesión</h3>
+                  <h3 className="text-sun text-break text-center mb-3 fw-bold">Iniciar sesión</h3>
 
                   <label className='form-label text-light m-0 fw-bold' htmlFor="e">Email</label>
                   <Field className="form-control fw-bold bg-secondary text-light border border-secondary mt-1 mb-3 mx-0" placeholder="Email" name="email" id="e"/>
@@ -57,7 +57,7 @@ export const Login = () => {
                     <ErrorMessage name='password' component="p" className="text-danger"/>
                     
                   <button type='submit' className='btn-sun fw-bold mt-4' disabled={isSubmitting}>{isSubmitting ? 'Iniciando sesion...' : 'Iniciar sesion'}</button>  
-                  <Link to="/register" className='text-end text-secondary text-decoration-none mt-5'>¿Primera vez en Sunflix? <b>Suscríbete ahora</b></Link>
+                  <Link to="/register" className='text-end text-secondary text-break text-decoration-none mt-5'>¿Primera vez en Sunflix? <b>Suscríbete ahora</b></Link>
               </Form>
             )}
             </Formik>    

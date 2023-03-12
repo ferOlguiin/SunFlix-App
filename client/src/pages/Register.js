@@ -20,7 +20,7 @@ export const Register = () => {
 
 
   return (
-    <div className='bg-dark d-flex justify-content-center align-items-center fondo text-white imgDeFondo'>
+    <div className='bg-dark d-flex justify-content-center align-items-center fondo text-white imgDeFondo p-5'>
         <Formik initialValues={dataUser}
                 enableReinitialize
                 validationSchema={Yup.object({

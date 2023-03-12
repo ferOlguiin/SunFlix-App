@@ -126,7 +126,7 @@ export const Categories = () => {
         }
         { 
             view === true ? 
-            <div className="container-fluid p-0 orden overflow-auto d-flex flex-column bg-black rounded text-white position-absolute position-fixed top-50 start-50 translate-middle border border-secondary border-1" style={{maxHeight:550, maxWidth:780}}>
+            <div className="container-fluid p-0 orden overflow-auto d-flex flex-column bg-black rounded text-white position-absolute position-fixed top-50 start-50 translate-middle border border-secondary border-1" style={{maxHeight:520, maxWidth:750}}>
 
                 <div className="rounded">
                     <figure className="rounded">

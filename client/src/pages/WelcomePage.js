@@ -9,32 +9,32 @@ export const WelcomePage = () => {
     <div className="bg-secondary">
 
       <div className="vh-100 imgDeFondo">
-        <nav className="d-flex justify-content-between align-items-center py-3 px-5">
+        <nav className="d-flex justify-content-sm-between justify-content-center flex-column flex-sm-row align-items-center py-3 px-5">
           <a href='/' className="text-decoration-none text-sun fw-bold m-0 p-0 display-4">Sunflix</a>
           <Link to="/login" className="btn-sun fw-bold">Iniciar sesion</Link>
         </nav>
         
         <main className="d-flex justify-content-center align-items-center vh-100">
-          <div className="text-white d-flex flex-column justify-content-center align-items-center container">
-            <h1 className="display-3 fw-bold">Películas y series</h1>
-            <h2 className='display-3 mb-4 fw-bold '>ilimitadas y mucho más</h2>
-            <h4 className="mb-5">Disfruta donde quieras. Cancela cuando quieras.</h4>
-            <h5 className="mb-4">¿Quieres ver Sunflix ya? Dale click al siguiente botón y completa el formulario.</h5>
+          <div className="text-white d-flex flex-column justify-content-center align-items-center container pb-5">
+            <h1 className="display-5 fw-bold text-center text-break">Películas y series</h1>
+            <h2 className='display-5 mb-4 fw-bold text-center text-break'>ilimitadas y mucho más</h2>
+            <h4 className="mb-5 text-center text-break">Disfruta donde quieras. Cancela cuando quieras.</h4>
+            <h5 className="mb-4 text-center text-break">¿Quieres ver Sunflix ya? Dale click al siguiente botón y completa el formulario.</h5>
             <Link to="/register" className="btn-sun fs-3 fw-bold" type="button">Registrate</Link>
           </div>
         </main>
       </div>
 
       {/* SECCIONES DE INFORMACION */}
-      <div className="bg-black text-white p-5 my-2 d-flex justify-content-center align-items-center">
+      <div className="bg-black text-white p-5 my-2 d-flex justify-content-center align-items-center flex-column flex-lg-row">
         <h1>Disfruta en tu TV Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</h1>
         <img alt="img" className="img-fluid" src={imagen}/>
       </div>
-      <div className="bg-black text-white p-5 my-2 d-flex justify-content-center align-items-center">
+      <div className="bg-black text-white p-5 my-2 d-flex justify-content-center align-items-center flex-column flex-lg-row">
         <img alt="img" className="img-fluid" src={imgnetflix}/>
         <h1>Descarga tus series para verlas offline Guarda tu contenido favorito y tendrás siempre algo para ver.</h1>
       </div>
-      <div className="bg-black text-white p-5 mt-2 d-flex justify-content-center align-items-center">
+      <div className="bg-black text-white p-5 mt-2 d-flex justify-content-center align-items-center flex-column flex-lg-row">
         <h1>Crea perfiles para niños Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</h1>
         <img alt="img" className="img-fluid" src={imgnetflix2}/>
       </div>

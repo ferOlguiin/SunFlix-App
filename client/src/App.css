@@ -10,6 +10,18 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.responsive-navbar{
+  background-color: #00000046;
+}
+
+@media only screen and (max-width: 1200px){
+  .carousel_box{
+    padding-top: 4rem;
+  }
+  .responsive-navbar{
+    background-color: #000000!important;
+  }
+}
 
 .fondo{
   min-height: 100vh;

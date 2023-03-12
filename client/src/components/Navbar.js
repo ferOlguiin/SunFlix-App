@@ -22,7 +22,7 @@ export const Navbar = ({main}) => {
       }
 
   return (
-    <nav className={`${main ? "fixed-top" : ""} py-2 px-5 bg-black bg-opacity-75 shadow navbar navbar-expand-xl navbar-light bg-dark`}>
+    <nav className={`${main ? "fixed-top responsive-navbar" : ""} py-2 px-5 shadow navbar navbar-expand-xl navbar-light`}>
       <div className="container-fluid">
         <Link to="/homepage" className="d-flex d-xl-none text-decoration-none text-sun mb-2 fw-bold display-6">Sunflix</Link>
         <button className="navbar-toggler mb-2 bg-warning bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
