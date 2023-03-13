@@ -123,6 +123,22 @@
   cursor: pointer;
 }
 
+.nav_login{
+  background-color: #00000050;
+}
+
+.view_categories_size{
+  max-width: 750px;
+  max-height: 550px;
+}
+
+@media only screen and (max-width: 800px){
+  .view_categories_size{
+    max-height: 370px;
+    max-width: 600px;
+  }
+}
+
 .font-title{
   font-size: 8vw;
   color: rgb(255, 255, 255);

@@ -111,12 +111,12 @@ export const Categories = () => {
                     }
                 }
                 return <div key={item} className="d-flex flex-column text-white">
-                            <h3 className="text-white text-center text-sm-start">{item}</h3>
+                            <h3 className="text-white text-center text-md-start fw-bold">{item}</h3>
                             <div className="d-flex flex-wrap justify-content-center justify-content-md-start">
                                 {pelis.map(movies => 
                                     <div key={movies._id} className="pe-3 pb-3 rounded">
                                         <figure onClick={() => handleMovieInfo(movies)} className="d-flex justify-content-center align-items-end categories_img_hover rounded">
-                                            <img src={movies.image.secure_url} className="rounded img-fluid" alt="imageas" style={{width:215, height:131}}/>
+                                            <img src={movies.image.secure_url} className="rounded img-fluid" alt="images" style={{width:215, height:131}}/>
                                             <figcaption className="position-absolute fw-bold text-white title_global_card_movies">{movies.title}</figcaption>
                                         </figure>
                                     </div>)
@@ -126,13 +126,13 @@ export const Categories = () => {
         }
         { 
             view === true ? 
-            <div className="container-fluid p-0 orden overflow-auto d-flex flex-column bg-black rounded text-white position-absolute position-fixed top-50 start-50 translate-middle border border-secondary border-1" style={{maxHeight:520, maxWidth:750}}>
+            <div className="container-fluid p-0 orden overflow-auto d-flex flex-column bg-black rounded text-white position-absolute position-fixed top-50 start-50 translate-middle border border-secondary border-1 view_categories_size">
 
                 <div className="rounded">
                     <figure className="rounded">
                         <div className="categories_img_box">
                             <div onClick={handleCancel} className="d-flex justify-content-end w-100 align-items-center rounded">
-                                <BsXCircleFill className="position-absolute rounded-circle bg-dark cursor mt-5 me-2 fs-2"/>
+                                <BsXCircleFill className="position-absolute rounded-circle bg-dark cursor mt-5 me-2 fs-1"/>
                             </div>
                             <img src={data.image.secure_url} className="img-fluid rounded" alt="serie"/>
                         </div>
@@ -166,7 +166,7 @@ export const Categories = () => {
                                     <h5 className="text-break">Año: {data.year}</h5>
                                     <h5 className={data.season ? "text-break" : "d-none"}>{data.season ? `Temporadas: ${data.season}` : ''}</h5>
                                     <h5 className="text-break">Género: {data.gender}</h5>
-                                    <h5 className="text-break">Duración: {data.duration} min</h5>
+                                    {data.chapters ? '' : <h5 className="text-break">Duración: {data.duration} min</h5>}
                                 </div>
                             </div>
                         </div>

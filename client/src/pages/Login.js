@@ -20,7 +20,7 @@ export const Login = () => {
   return (
     <div className="fondo imgDeFondo">
         
-        <nav className="d-flex justify-content-center justify-content-md-start align-items-center pt-2 px-5">
+        <nav className="fixed-top nav_login d-flex justify-content-center justify-content-md-start align-items-center pt-2 px-5">
               <a href="/" className="text-sun text-decoration-none display-4 fw-bold">Sunflix</a>
         </nav>
 

@@ -52,8 +52,8 @@ export const AllSeriesCategories = () => {
           </select>
         </div>
         
-        <div className='d-flex flex-column justify-content-center align-items-start'>
-          <h3 className='p-2 text-white fw-bold'>{wantedCategorie ? wantedCategorie : ''}</h3>
+        <div className='d-flex flex-column justify-content-center align-items-md-start align-items-center'>
+          <h3 className='p-2 text-white fw-bold text-md-start text-center'>{wantedCategorie ? wantedCategorie : ''}</h3>
           <div className='d-flex flex-wrap justify-content-center align-items-center'>
             {
               categorie.length > 0 ? categorie.map(item => <div onClick={() => navigate(`/serie/${item._id}`)} key={item._id} className="d-flex flex-column justify-content-center align-items-center p-2">

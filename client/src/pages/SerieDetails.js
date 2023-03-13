@@ -124,18 +124,18 @@ export const SerieDetails = () => {
 
                         {/* DESCRIPCION, AÑO Y DURACION */}
                         
-                        <div className="container-fluid py-3 mt-4 shadow-lg">
+                        <div className="container-fluid py-3 mt-3 shadow-lg">
                             <div className="row">
-                                <div className="col-md-7 py-1 px-5 d-flex flex-column justify-content-md-center align-items-md-start align-items-center">
+                                <div className="col-md-7 py-1 px-3 d-flex flex-column justify-content-md-center align-items-md-start align-items-center">
                                     <h3 className="pb-1 pt-4 fw-bold">Descripción</h3>
-                                    <p className="fs-5 text-break">{data.description}</p>
+                                    <p className="fs-5 text-break text-center text-md-start">{data.description}</p>
                                 </div>
-                                <div className="col-md-5 py-1 px-5 d-flex flex-column align-items-md-center align-items-center justify-content-md-center">
+                                <div className="col-md-5 py-1 px-3 d-flex flex-column align-items-md-end align-items-center justify-content-md-center">
                                     {data.chapters ? <h5 className="text-break fw-bold">Serie</h5> : <h5 className="text-break fw-bold">Pelicula</h5>}
                                     <h5 className="text-break">Año: {data.year}</h5>
                                     <h5 className={data.season ? "text-break" : "d-none"}>{data.season ? `Temporadas: ${data.season}` : ''}</h5>
                                     <h5 className="text-break">Género: {data.gender}</h5>
-                                    <h5 className="text-break">Duración: {data.duration} min</h5>
+                                    {data.chapters ? '' : <h5 className="text-break">Duración: {data.duration} min</h5>}
                                 </div>
                             </div>
                         </div>

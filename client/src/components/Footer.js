@@ -6,11 +6,11 @@ export const Footer = (homepage) => {
         <div className='container text-secondary p-5'>
           {
             homepage ? <div className="d-flex justify-content-center align-items-center pt-1 pb-4 flex-wrap">
-              <a href="http://www.google.com" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaFacebookF/></a>
-              <a href="http://www.google.com" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaInstagram/></a>
-              <a href="http://www.google.com" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaTwitter/></a>
-              <a href="http://www.google.com" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaYoutube/></a>
-              <a href="https://github.com/ferOlguiin?tab=repositories" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaGithub/></a>
+              <a href="http://www.google.com" rel="noreferrer" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaFacebookF/></a>
+              <a href="http://www.google.com" rel="noreferrer" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaInstagram/></a>
+              <a href="http://www.google.com" rel="noreferrer" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaTwitter/></a>
+              <a href="http://www.google.com" rel="noreferrer" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaYoutube/></a>
+              <a href="https://github.com/ferOlguiin?tab=repositories" rel="noreferrer" target="_blank" className='text-sun text-decoration-none fs-3 mx-4'><FaGithub/></a>
             </div> : ''
           }  
           <h5 className='mb-4 text-center text-light fw-bold'>¿Preguntas? Llama al 0800 345 XXXX</h5> 

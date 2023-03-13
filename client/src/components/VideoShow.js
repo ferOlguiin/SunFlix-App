@@ -5,8 +5,6 @@ export const VideoShow = ({data}) => {
 
     let widthOfYourPc = window.innerWidth;
     let heightOfYourPc = window.innerHeight - 11;
-    let historialDeUrl = window.location;
-    console.log(historialDeUrl)
 
   return (
     <div>

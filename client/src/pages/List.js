@@ -16,8 +16,8 @@ export const List = () => {
           <Spinner data={userProfile}/>
           :
           <main>
-            <h2 className="fw-bold text-start text-white px-5 pt-4 pb-2">Mi lista</h2>
-            <div className="d-flex container-fluid flex-wrap px-5">
+            <h2 className="fw-bold text-md-start text-center text-white px-5 pt-4 pb-2">Mi lista</h2>
+            <div className="d-flex container-fluid justify-content-center justify-content-md-start flex-wrap px-5">
             {
               user.list.length > 0 ? user.list.slice(0,99).reverse().map((item) => 
               <div onClick={() => navigate(`/serie/${item._id}`)} key={item._id} className="d-flex flex-column justify-content-center align-items-center rounded pe-3 pb-3">

@@ -54,7 +54,7 @@ export const Search = () => {
                 </div>
             </div>
 
-            <div className="d-flex flex-wrap">
+            <div className="d-flex justify-content-center justify-content-md-start flex-wrap">
                 {
                     items[0] !== undefined && wantedMovie !== '' ? items.map(item => <div onClick={() => navigate(`/serie/${item._id}`)} key={item._id} className="p-2 rounded">
                                         <figure className="d-flex justify-content-center align-items-end rounded categories_img_hover">
