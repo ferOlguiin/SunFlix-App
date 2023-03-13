@@ -11,7 +11,7 @@ export const WelcomePage = () => {
       <div className="vh-100 imgDeFondo">
         <nav className="d-flex justify-content-sm-between justify-content-center flex-column flex-sm-row align-items-center py-3 px-5">
           <a href='/' className="text-decoration-none text-sun fw-bold m-0 p-0 display-4">Sunflix</a>
-          <Link to="/login" className="btn-sun fw-bold">Iniciar sesion</Link>
+          <Link to="/login" className="btn-sun fw-bold" style={{fontSize: ".8rem"}}>Iniciar sesion</Link>
         </nav>
         
         <main className="d-flex justify-content-center align-items-center vh-100">
