@@ -17,7 +17,7 @@ export const Help = () => {
           <h2>Hola {user.name}</h2>
           <p>Recomendado para ti</p>
         </div>
-        <div className="d-flex flex-wrap">
+        <div className="d-flex flex-wrap justify-content-center align-items-center">
           <button className="btn btn-secondary me-1">Como mantener segura tu cuenta</button>
           <button className="btn btn-secondary me-1">Control parental de la app</button>
           <button className="btn btn-secondary me-1">Como cambiar tu plan</button>
