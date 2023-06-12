@@ -56,8 +56,9 @@ export const Login = () => {
                   <Field className="form-control fw-bold bg-secondary border border-secondary text-light mt-1 mb-3 mx-0" placeholder="Contraseña" name="password" id="c"/>
                     <ErrorMessage name='password' component="p" className="text-danger"/>
                     
-                  <button type='submit' className='btn-sun fw-bold mt-4' disabled={isSubmitting}>{isSubmitting ? 'Iniciando sesion...' : 'Iniciar sesion'}</button>  
-                  <Link to="/register" className='text-end text-secondary text-break text-decoration-none mt-5'>¿Primera vez en Sunflix? <b>Suscríbete ahora</b></Link>
+                  <button type='submit' className='btn-sun fw-bold mt-4' disabled={isSubmitting}>{isSubmitting ? 'Iniciando sesion...' : 'Iniciar sesion'}</button>
+                  <span className="text-end text-secondary text-break mt-5 fs-6"> Probala con: admin@gmail.com - 1234 </span>
+                  <Link to="/register" className='text-end text-secondary text-break text-decoration-none mt-2'>¿Primera vez en Sunflix? <b>Suscríbete ahora</b></Link>
               </Form>
             )}
             </Formik>    
